@@ -18,4 +18,8 @@ if __name__ == '__main__':
     print(erickson.idade)
     for filho in ramao.filhos:
         print('Os filhos de ' + ramao.nome + ' são: ' + filho.nome)
+    ramao.sobrenome = 'Rolon'
+    del ramao.filhos
+    print(ramao.__dict__)
+    print(erickson.__dict__)
 
